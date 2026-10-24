@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 04</title>
+    <script>
+        let precos = [50, 120, 80, 200, 30, 150];
+
+        console.log(precos);
+        
+        // seleciona preços maiores ou iguais a 100
+        console.log("preços maiores ou iguais a 100: ");
+        let maiorPreco = precos.filter(precos => precos >= 100);
+        console.log(maiorPreco);
+
+        // aplica 10% de desconto (multiplica por 0.9)
+        console.log( "10% de desconto: ");
+        let desconto = maiorPreco.map(precos => precos * 0.9);
+
+        //exibe cada preço com desconto formatado
+        console.log("cada preço com desconto: ");
+        desconto.forEach(preco => {
+            console.log(`Preço com desconto: R$ ${preco.toFixed(2)}`);
+            
+        });
+
+        console.log( `Quantidade de produtos selecionados: ${maiorPreco.lenght}`);
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

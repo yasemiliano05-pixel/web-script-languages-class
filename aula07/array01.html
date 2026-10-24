@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array01</title>
+    <script>
+        let frutas = ["Maça", "Pera" , "Uva"]
+        console.log(frutas);
+
+        //alterando o conteúdo de um índice
+        console.log("alterando o conteúdo de um índice");
+        frutas[1] = "Kiwi";
+        console.log(frutas);
+        console.log(frutas[0]);
+        console.log(frutas[1]);
+        console.log(frutas[2]);
+
+        //adicionando novos índices ao final do array
+        console.log("dicionando novos índices ao final do array");
+        frutas.push("banana"); 
+
+        console.log(frutas);
+
+        console.log("remove a ultima posição do array");
+        frutas.pop(); // remove a ultima posição do array
+        console.log(frutas);
+        
+        console.log("adiciona conteúdo no início do array");
+        frutas.unshift("Laranja") // adiciona conteúdo no início do array
+        console.log(frutas);
+        
+        console.log("remove índice do início do array");
+        frutas.shift() // remove índice do início do array
+        console.log(frutas);
+
+        console.log("procurando valor (Kiwi) no array");
+         // procurando valores no array
+        console.log(frutas.includes("Kiwi"));
+
+        console.log("retornando posição do (Kiwi) no array");
+         // retornando posição no array
+        console.log(frutas.indexOf("Kiwi"));
+
+        // manipulando vetores
+        console.log("manipulando vetores");
+        frutas.splice(0,1); // removendo um conteúdo a partir do índice 0 (0 [indica a partir de qual índice vamos deletar], 1 [indica quantos índices - valores - vamos deletar!])
+        console.log(frutas);
+        
+        /*
+        // frutas é um array com 15 posições, para apagar a partir do índice 7 até o final faremos da seguinte forma:
+        frutas.splice(7, frutas.length - 1) // length retorna o tamanho do meu array
+        */
+
+        //adicionando elemento a partir 
+        frutas.splice(2,1,"Manga");
+        console.log(frutas);
+        
+    
+    </script>
+</head>
+<body>
+    
+</body> 
+</html>
