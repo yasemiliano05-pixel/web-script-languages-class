@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        console.log("-----------Exercicio 4--------------");
+        // Exercicio 4 //
+        let texto = "   este é   um grande desafio para quem   está aprendendo JavaScript!  ";
+
+        // ==========================================
+        // a) Remover todos os espaços extras
+        // ==========================================
+        // Primeiro limpamos as pontas com .trim()
+        // Depois usamos .replace(/\s+/g, ' ') que substitui múltiplos espaços seguidos por apenas um espaço simples
+        let textoFormatado = texto.trim().replace(/\s+/g, ' ');
+
+
+        // ==========================================
+        // b) Primeira letra de cada palavra em Maiúscula
+        // ==========================================
+        let palavras = textoFormatado.split(" ");
+        for (let i = 0; i < palavras.length; i++) {
+            // Pega a primeira letra, joga pra Maiúscula, e junta com o resto da palavra em minúscula
+            palavras[i] = palavras[i][0].toUpperCase() + palavras[i].substring(1).toLowerCase();
+        }
+        let textoCapitalizado = palavras.join(" ");
+
+
+        // ==========================================
+        // c) Contar vogais e consoantes
+        // ==========================================
+        let vogais = 0;
+        let consoantes = 0;
+
+        // Transformamos tudo em minúsculo para facilitar a contagem
+        let textoParaContar = textoFormatado.toLowerCase();
+
+        for (let i = 0; i < textoParaContar.length; i++) {
+            let caractere = textoParaContar[i];
+
+            // Verifica se é uma vogal (incluindo letras com acento do exemplo)
+            if ("aeiouáéíóúâêîôûãõ".includes(caractere)) {
+                vogais++;
+            }
+            // Verifica se é uma consoante (letras de 'a' a 'z' que não são vogais)
+            else if (caractere >= 'a' && caractere <= 'z') {
+                consoantes++;
+            }
+        }
+
+
+        // ==========================================
+        // d) Verificar se a palavra "desafio" aparece (ignoring case)
+        // ==========================================
+        // Convertendo o texto formatado para minúsculas antes de procurar
+        let contemDesafio = textoFormatado.toLowerCase().includes("desafio");
+
+
+        // ==========================================
+        // e) Exibir as 10 primeiras letras do texto processado
+        // ==========================================
+        let dezPrimeirasLetras = textoFormatado.slice(0, 10);
+
+
+        // --- EXIBINDO OS RESULTADOS ESPERADOS NO CONSOLE ---
+        console.log("Texto formatado:", textoFormatado);
+        console.log("Texto com iniciais maiúsculas:", textoCapitalizado);
+        console.log(`Quantidade: Vogais = ${vogais} | Consoantes = ${consoantes}`);
+        console.log("Contém a palavra 'desafio'?:", contemDesafio);
+        console.log("10 primeiras letras:", dezPrimeirasLetras);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

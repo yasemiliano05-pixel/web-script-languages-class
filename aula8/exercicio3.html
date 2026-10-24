@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        console.log("-----------Exercicio 3--------------");
+        //Exercicio 3 //
+
+        let frase = "O JavaScript torna o desenvolvimento web mais incrível!";
+
+        // Criamos um array dividindo a frase por espaços para isolar as palavras
+        let palavras = frase.split(" ");
+
+        // a) Primeira palavra da frase
+        let primeiraPalavra = palavras[0];
+
+        // b) Última palavra da frase
+        let ultimaPalavra = palavras[palavras.length - 1];
+
+        // c) Quantas palavras existem na frase
+        let quantidadePalavras = palavras.length;
+
+        // d) Substituir a palavra "JavaScript" por "programação"
+        let fraseSubstituida = frase.replace("JavaScript", "programação");
+
+        // e) Frase final em letras minúsculas
+        let fraseMinuscula = fraseSubstituida.toLowerCase();
+
+
+        // --- EXIBINDO OS RESULTADOS NO CONSOLE ---
+        console.log("Primeira palavra:", primeiraPalavra);
+        console.log("Última palavra:", ultimaPalavra);
+        console.log("Quantidade de palavras:", quantidadePalavras);
+        console.log("Frase com substituição:", fraseSubstituida);
+        console.log("Frase final em minúsculas:", fraseMinuscula);
+
+        //
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
