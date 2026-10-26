@@ -1,0 +1,11 @@
+#info {
+    display: none;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 4px;
+
+}
+
+#info-visivel {
+    display: block;
+}

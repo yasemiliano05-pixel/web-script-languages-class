@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+
+.btnTexto {
+    margin-top: 12px;
+    padding: 8px 20px;
+    background-color: black;
+    border-radius: 12px;
+    color: aliceblue;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.mensagem {
+    color: aliceblue;
+    background-color: blue;
+    width: 10%;
+}
